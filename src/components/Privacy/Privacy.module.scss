@@ -1,0 +1,10 @@
+@import '@styles/variables';
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white_06;
+    flex: 1;
+    border-radius: 16px;
+}

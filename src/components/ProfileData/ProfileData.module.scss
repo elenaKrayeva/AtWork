@@ -1,0 +1,16 @@
+@import '@styles/variables';
+
+.container {
+  flex: 1;
+  background-color: $white_06;
+  border-radius: 16px;
+  padding: 40px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32.78px;
+  color: $text_primary;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $ligth_grey_04;
+}

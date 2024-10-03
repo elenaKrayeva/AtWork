@@ -1,0 +1,26 @@
+@import '@styles/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.registeredMenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: $grey_02;
+}
+.avat {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.userName {
+  font-size: 16px;
+  line-height: 22px;
+}

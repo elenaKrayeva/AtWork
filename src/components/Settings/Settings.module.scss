@@ -1,0 +1,28 @@
+@import '@styles/variables';
+
+.container {
+    background-color: $white_06;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.userPhoto {
+    border-radius: 8px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+.menuItems {
+    padding: 12px 0;
+    border-bottom: 1px solid $ligth_grey_04;
+}
+.menuLink {
+    color: $light_grey_03;
+    text-decoration: none;
+}
+.active {
+    color: $text_primary;
+}
