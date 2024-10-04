@@ -9,7 +9,12 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   &:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
+  }
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 162px;
   }
 }
 .infoContainer {
@@ -18,11 +23,17 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 42px;
+  @media (max-width: 480px) {
+    gap: 12px;
+  }
 }
 .infoBlock {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  @media (max-width: 480px) {
+    gap: 6px;
+  }
 }
 .grayscale {
   filter: grayscale(100%);
@@ -32,6 +43,11 @@
   font-weight: 600;
   line-height: 27.32px;
   color: $text_blue_accent;
+  word-break: break-all;
+  @media (max-width: 480px) {
+    font-size: 18px;
+    line-height: 24.59px;
+  }
 }
 .grayname {
   color: $grey_02;
@@ -41,6 +57,11 @@
   font-weight: 500;
   line-height: 21.86px;
   color: $grey_02;
+  @media (max-width: 480px) {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.12px;
+  }
 }
 .graycompany {
   color: $light_grey_03;
@@ -50,6 +71,10 @@
   font-weight: 500;
   line-height: 19.12px;
   color: $light_grey_03;
+  @media (max-width: 480px) {
+    font-size: 10px;
+    line-height: 13.66px;
+  }
 }
 .grayCity {
   color: $ligth_grey_04;
@@ -69,23 +94,35 @@
       fill: $text_primary;
     }
   }
+
   &:hover svg path {
     fill: $text_blue_accent;
+  }
+
+  @media (max-width: 480px) {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 .dropdownMenu {
   position: absolute;
   top: 30px;
-  right: 10px;
-  border: 1px solid $black_01;
+  right: -20px;
+  border: 1px solid $ligth_grey_04;
   border-radius: 12px;
   background-color: $white_06;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 184px;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+  @media (max-width: 480px) {
+    width: 160px;
+  }
 }
 .dropBtn {
   border: none;
@@ -98,5 +135,11 @@
   transition: color 0.3s ease;
   &:hover {
     color: $text_blue_accent;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.12px;
   }
 }

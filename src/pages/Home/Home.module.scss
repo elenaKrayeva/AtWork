@@ -1,11 +1,14 @@
 @import '@styles/variables';
 
 .container {
-  padding-top: 40px;
+  padding: 40px 10px 10px 10px;
   background-color: $white_05;
   max-width: 1190px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media (max-width: 480px) {
+    gap: 32px;
+  }
 }

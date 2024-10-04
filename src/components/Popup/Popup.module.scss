@@ -22,6 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 480px) {
+    padding: 32px;
+    min-width: 271px;
+  }
 }
 
 .text {
@@ -29,6 +33,10 @@
   font-weight: 600;
   line-height: 27.32px;
   color: $grey_02;
+  @media (max-width: 480px) {
+    font-size: 18px;
+    line-height: 24.59px;
+  }
 }
 
 .popupContent {

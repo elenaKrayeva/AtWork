@@ -3,10 +3,13 @@
 .container {
   max-width: $maxWidth;
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding: 20px 10px 10px 10px;
 }
 .arrowBack {
   padding: 20px 0;
+  @media (max-width: 480px) {
+    padding-left: 8px;
+  }
 }
 .arrowBlock {
   display: flex;
@@ -18,9 +21,17 @@
   font-weight: 600;
   line-height: 27.32px;
   color: $grey_02;
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 .profileContainer {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 32px;
+  }
 }

@@ -5,6 +5,9 @@
   background-color: $white_06;
   border-radius: 16px;
   padding: 40px;
+  @media (max-width: 480px) {
+    padding: 28px;
+  }
 }
 .title {
   font-size: 24px;

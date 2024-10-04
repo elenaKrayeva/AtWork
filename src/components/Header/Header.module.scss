@@ -10,4 +10,8 @@
   height: $headerHeight;
   max-width: $maxWidth;
   margin: 0 auto;
+  padding: 10px;
+  @media (max-width:480px) {
+    height: $headerMobileHeight;
+  }
 }

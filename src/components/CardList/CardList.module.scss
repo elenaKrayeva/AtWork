@@ -7,9 +7,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 28px 0;
-  @media (max-width: 1150px) {
+  padding-top: 28px;
+
+  @media (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 16px;
   }
 }
 
